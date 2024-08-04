@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ovo&display=swap" rel="stylesheet">
+    <script src="postcss.config.js"></script>
+    <link rel="icon" href="/images/men_emoji.jpg" type="image/png">
+    
+</head>
+<body class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 right-0 w-11/12 z-10 translate-y-[-90%] bg-white backdrop-blur-md dark:hidden">
+        <img src="/images//header-bg-color.png" alt="" class="w-full backdrop-blur-md h-40 ">
+    </div>
+    
+    <nav class="w-full fixed px-5 lg:px-8 lg:px-[8%]  py-4 flex items-center justify-between z-50 backdrop-blur-lg ">
+    <h1 class="w-28 cursor-pointer font-bold text-2xl mr-14">Mr KB</h1>
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15 font-ovo dark:border dark:border-white/50 dark:bg-transparent ">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skill">My Skills</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
+    </ul>
+
+    <div class="flex items-center">
+    <button onclick="toggleTheme()">
+       <img src="/images/dark.svg" class="w-8 dark:hidden" alt="">
+        <img src="/images/light.svg" alt="" class="w-6 hidden dark:block" srcset="">
+      </button>
+    <a href="#contact" class="hidden lg:flex items-center px-10 py-2 gap-3 border border-gray-500 rounded-full ml-4 font-ovo dark:white/50  ">Contact 
+      <img src="/images/north_east_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" aria-colspan="" alt="" srcset="" class="w-4 dark:hidden">
+      <img src="/images/north_east_24dp_FFFFFF.svg" class="w-4 hidden dark:block" alt="">
+    </a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="/images/menu_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-8 dark:hidden" srcset="">
+          <img src="/images/menu_fffffff_4 copy.svg" alt="" class="w-8 hidden dark:block">
+        </button>
+    </div>
+
+
+     <!-- mobile menu -->
+    <ul id="sideMenu" class="flex flex-col md:hidden py-20 px-10 fixed -right-64 gap-4 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-ovo dark:bg-[#2a004a] dark:text-white ">
+        <div class="right-6 absolute top-6 " onclick="closeMenu()">
+        <img src="/images/close_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-8 cursor-pointer dark:hidden">
+        <img src="/images//close-white.svg" alt="" class="w-8 cursor-pointer hidden dark:block">
+        </div>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skill">My Skills</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
+    </ul>
+    </nav>
+
+<!-- header -->
+        <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex  flex-col items-center justify-center gap-4 ">
+            <img src="/images/photo.jpeg" class="rounded-full w-32 h-32 object-cover" alt="">
+            <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo">Hi! I'm Balaji <span class="">👋</span></h3>
+            <h1 class="text-3xl sm:text-6xl  lg:text-[66px] font-ovo">frontend web developer</h1>
+            <p class="max-w-2xl mx-auto font-ovo">I am a frontend developer from India,Turning Ideas into Reality with Code & Design.,Creating Innovative Web Applications with Passion </p>
+
+            <div class="flex  flex-col sm:flex-row items-center gap-4 mt-4">
+                <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]  flex items-center gap-2 text-white dark:border-transparent">Contact me <img src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="w-4" alt="" srcset=""></a>
+                <a href="/images/Resume.pdf" download class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">My Resume<span class=""><i class='bx bx-download  ' ></i></span></a>
+            </div>
+        </div>
+
+        <!-- about  -->
+            <div class="w-full px-[12%] py-10 scroll-m-20  " id="about">
+                 <div class="text-center mb-2 text-lg font-ovo">Introduction</div>
+                 <div class="text-center text-5xl font-ovo">About me</div>
+
+                 <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+                    <div class="max-w-max mx-auto relative">
+                        <img src="/images/photo.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none" srcset="">
+                        <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+                            <img src="/images/circular-text.png" class="w-full animate-spin_slow" alt="">
+                            <img src="/images/men_emoji.jpg" class="w-1/4 absolute  " alt="">
+                        </div>
+                    </div>
+                
+
+                    <div class="flex-1">
+                        <p class="mb-10 max-w-2xl font-ovo">I am an experienced Frontend Developer with a strong background in crafting engaging and dynamic web applications. I have collaborated with prestigious organizations, contributing to their success and growth through innovative and user-centric solutions.</p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-3 max-w-2xl gap-6 ">
+                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+                                    <img src="/images/code.svg" alt="" class="w-7 mt-3 dark:hidden">
+                                    <img src="/images/code-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
+                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+                                    <p class="text-gray-600 text-sm dark:text-white/80 ">HTML, CSS, JavaScript React Js, Next Js</p>  
+                                </li>
+                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+                                    <img src="/images/school.svg" alt="" class="w-7 mt-3 dark:hidden">
+                                    <img src="/images/school-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
+                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                                    <p class="text-gray-600 text-sm dark:text-white/80">B.E in Computer Science</p>  
+                                </li>
+                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                                    <img src="/images/work.svg" alt="" class="w-7 mt-3 dark:hidden">
+                                    <img src="/images/work-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
+                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
+                                    <p class="text-gray-600 text-sm dark:text-white/80">Built more than 10 projects</p>  
+                                </li>
+                            </ul>
+                                <h4 class="my-6 text-gray-700 dark:text-white">Tool i use</h4>
+
+                                <ul class="flex gap-3 items-center sm:gap-5">
+                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/vscode.png" alt="" class="w-5 sm:w-7"></li>
+                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/firebase.png" alt="" class="w-5 sm:w-7"></li>
+                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/mongodb.png" alt="" class="w-5 sm:w-7"></li>
+                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/figma.png" alt="" class="w-5 sm:w-7"></li>
+                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/git.png" alt="" class="w-5 sm:w-7"></li>
+                                </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- skills -->
+            <div class=" text-gray-800 mt-10 scroll-m-20" id="skill">
+                <div class="container mx-auto px-4 py-8">
+                    <h2 class="text-3xl font-bold mb-6 text-center font-ovo dark:text-white">My Skills</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-html5 text-4xl text-orange-600 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">HTML</h3>
+                        </div>
+                        <p class="font-ovo">Proficient in creating semantic, accessible, and SEO-friendly markup.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-css3-alt text-4xl text-blue-600 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">CSS</h3>
+                        </div>
+                        <p class="font-ovo">Experienced in designing responsive layouts using CSS and pre-processors like SASS.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-js-square text-4xl text-yellow-500 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">JavaScript</h3>
+                        </div>
+                        <p class="font-ovo">Skilled in vanilla JavaScript and frameworks like React for building interactive web applications.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fas fa-code text-4xl text-teal-500 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">Tailwind CSS</h3>
+                        </div>
+                        <p class="font-ovo">Proficient in using Tailwind CSS for rapid UI development with utility-first classes.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-react text-4xl text-blue-500 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">React</h3>
+                        </div>
+                        <p class="font-ovo">Experienced in building dynamic single-page applications with React and state management libraries.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-git-alt text-4xl text-red-600 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">Git</h3>
+                        </div>
+                        <p class="font-ovo">Proficient in version control using Git and collaborating on projects using GitHub.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-node-js text-4xl text-green-500 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">Node.js</h3>
+                        </div>
+                        <p class="font-ovo"> Experienced in building scalable server-side applications using Node.js and Express.</p>
+                      </div>
+                      
+                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow
+                      dark:hover:shadow-emerald-500/50">
+                        <div class="flex items-center mb-4">
+                          <i class="fab fa-python text-4xl text-yellow-600 mr-4"></i>
+                          <h3 class="text-xl font-semibold font-ovo">Python</h3>
+                        </div>
+                        <p class="font-ovo">Skilled in Python for scripting, automation, and web development with frameworks like Django and Flask.</p>
+                      </div>
+                    
+                    </div>
+                  </div>
+            </div>
+
+            <!-- projects -->
+            <div class="container mx-auto px-4 py-8 scroll-m-20" id="work">
+                <h2 class="text-3xl font-bold mb-6 text-center font-ovo ">My Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                  
+                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                    <img src="/images//project1.jpeg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Food Restaurant</h3>
+                    <p class="mb-4 font-ovo text-black">I just completed a food Restaurant website using react and tailwind Css!</p>
+                    <div class="flex space-x-4">
+                      <a href="https://kbrestaurant-website.netlify.app/" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">Source</a>
+                      <a href="https://kbrestaurant-website.netlify.app/" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition-colors ">Live</a>
+                    </div>
+                  </div>
+                  
+                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/images/project2.webp" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Interactive card details form</h3>
+                    <p class="mb-4 font-ovo text-black">Interactive card details form using an HTML ,CSS and JAVASCRIPT.</p>
+                    <div class="flex space-x-4">
+                      <a href="https://github.com/balajikarthik2004/Interactive-card-details-form" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors ">Source</a>
+                      <a href="https://balajikarthik2004.github.io/Interactive-card-details-form/" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">Live</a>
+                    </div>
+                  </div>
+                  
+                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/images/project3.jfif" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Netflix-clone</h3>
+                    <p class="mb-4 font-ovo text-black">I have tried my new project as Netflix-clone using HTML, CSS and JAVASCRIPT.</p>
+                    <div class="flex space-x-4">
+                      <a href="https://github.com/balajikarthik2004/Website-netflix-clone" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">Source </a>
+                      <a href="https://balajikarthik2004.github.io/Website-netflix-clone/#" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">Live</a>
+                    </div>
+                  </div>
+                  
+                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/images//PROJECT4.png" alt="Project 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Sample Portfolio</h3>
+                    <p class="mb-4 font-ovo text-black">This project is a culmination of my passion for web development and design.</p>
+                    <div class="flex space-x-4">
+                      <a href="https://github.com/balajikarthik2004/portfolio1" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors font-ovo ">Source</a>
+                      <a href="https://kb-protfolio1.netlify.app/" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition-colors">Live</a>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="flex items-center justify-center ">
+                <button class="flex justify-center items-center border-gray-700 rounded-full  border border-r-4 mt-20 gap-4 text-2xl text-gray-600 hover:bg-lightHover "> <a href="https://github.com/balajikarthik2004" class="flex gap-4 font-ovo rounded-full py-3 px-5  dark:text-white  darK:border-white  dark:hover:bg-darkHover">Show more
+                  <img src="/images/arrow_forward_black.svg" class="text-black w-5  hover:block dark:hidden" alt="" srcset="">
+                  <img src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="text-black w-5 hidden dark:block " alt="" srcset="">
+                </a></button>
+              </div>
+              </div>
+
+      <!-- connect  -->
+
+      <div class="w-full px-[12%] py-10 scroll-m-20 bg-[url('./images/footer.png
+      ')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none " id="contact">
+        <h4 class="text-center mb-2 text-lg font-ovo">Connect with me</h4>
+        <h2 class="text-center text-5xl font-ovo"> Get in touch</h2>
+        <p class="text-center max-w-2xl mx-auto mb-12 mt-5 font-ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+              
+        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+          <input type="hidden" name="access_key" value="fcd5e40f-c506-4733-8280-3b83c2e363f2">
+          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white  dark:bg-darkHover/30 dark:border-white/90 "  name="name" required>
+
+            <input type="text" placeholder="Email" name="email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required>
+          </div>
+            <textarea  rows="6" placeholder="Enter your message" class="w-full border-[0.5px] border-gray-400 rounded-md bg-white p-4 mb-6  dark:bg-darkHover/30 dark:border-white/90" id="" required name="message"></textarea>
+
+            <button class="bg-black/80 text-white py-3 px-8 flex justify-between mx-auto items-center gap-3 rounded-full hover:bg-black duration-500 w-max font-ovo dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover ">submit now
+              <img src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-4">
+            </button>
+
+        </form>
+      
+      </div>
+              
+      <!-- footer  -->
+
+      <div class="mt-20 ">
+        <div class="text-center mt-6 ">
+          <h1 class="mx-auto mb-4 w-26 font-bold text-3xl ">Mr KB</h1>
+          <div class="w-max flex items-center justify-center gap-2 mx-auto  ">
+            <img src="/images/mail.svg" alt="" class="w-6 dark:hidden">
+            <img src="/images/mail-white.svg" alt="" class="w-6  hidden dark:block ">
+            Kbalajikbalaji879@gmail.com
+          </div>
+
+        </div>
+        <div class=" flex items-center justify-around sm:flex border-t  border-gray-400 mx-[10%]  mt-12 py-6  ">
+          <p class="mr-4">&copy; 2024 Balaji Developer. all rights reserved.</p>
+          <ul class="flex items-center justify-center gap-5 sm:mt-0 mt-4 "> 
+            <li class="">
+                <a href="https://github.com/balajikarthik2004"><i class='bx bxl-github bx-sm'></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/balaji-k-894031258/"><i class='bx bxl-linkedin-square bx-sm'></i></a>
+            </li>
+            <li>              
+              <a href=""><i class='bx bxl-facebook-square bx-sm'></i></a>
+            </li>
+            <li>
+              <a href=""><i class='bx bxl-twitter bx-sm'></i></a>
+            </li>
+        
+        </ul>
+        </div> 
+      </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
