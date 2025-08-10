@@ -1,438 +1,1590 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth dark">
-<head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/tailwind.config.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ovo&display=swap" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Ovo&display=swap"
+      rel="stylesheet"
+    />
     <script src="postcss.config.js"></script>
-    <link rel="icon" href="/images/men_emoji.jpg" type="image/png">
-    
-</head>
-<body class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white">
-    <div class="fixed top-0 right-0 w-11/12 z-10 translate-y-[-90%] bg-white backdrop-blur-md dark:hidden">
-        <img src="/images//header-bg-color.png" alt="" class="w-full backdrop-blur-md h-40 ">
+    <link rel="icon" href="/images/men_emoji.jpg" type="image/png" />
+  </head>
+  <body
+    class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white"
+  >
+    <div
+      class="fixed top-0 right-0 w-11/12 z-10 translate-y-[-90%] bg-white backdrop-blur-md dark:hidden"
+    >
+      <img
+        src="/images//header-bg-color.png"
+        alt=""
+        class="w-full backdrop-blur-md h-40"
+      />
     </div>
-    
-    <nav class="w-full fixed px-5 lg:px-8 lg:px-[8%]  py-4 flex items-center justify-between z-50 backdrop-blur-lg ">
-    <h1 class="w-28 cursor-pointer font-bold text-2xl mr-14">Mr KB</h1>
-    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15 font-ovo dark:border dark:border-white/50 dark:bg-transparent ">
+
+    <nav
+      class="w-full fixed px-5 lg:px-8 lg:px-[8%] py-4 flex items-center justify-between z-50 backdrop-blur-lg"
+    >
+      <h1 class="w-28 cursor-pointer font-bold text-2xl mr-14">Mr KB</h1>
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15 font-ovo dark:border dark:border-white/50 dark:bg-transparent"
+      >
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#skill">My Skills</a></li>
         <li><a href="#work">My Work</a></li>
         <li><a href="#contact">Contact me</a></li>
-    </ul>
+      </ul>
 
-    <div class="flex items-center">
-    <button onclick="toggleTheme()">
-       <img src="/images/dark.svg" class="w-8 dark:hidden" alt="">
-        <img src="/images/light.svg" alt="" class="w-6 hidden dark:block" srcset="">
-      </button>
-    <a href="#contact" class="hidden lg:flex items-center px-10 py-2 gap-3 border border-gray-500 rounded-full ml-4 font-ovo dark:white/50  ">Contact 
-      <img src="/images/north_east_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" aria-colspan="" alt="" srcset="" class="w-4 dark:hidden">
-      <img src="/images/north_east_24dp_FFFFFF.svg" class="w-4 hidden dark:block" alt="">
-    </a>
-        <button class="block md:hidden ml-3" onclick="openMenu()">
-          <img src="/images/menu_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-8 dark:hidden" srcset="">
-          <img src="/images/menu_fffffff_4 copy.svg" alt="" class="w-8 hidden dark:block">
+      <div class="flex items-center">
+        <button onclick="toggleTheme()">
+          <img src="/images/dark.svg" class="w-8 dark:hidden" alt="" />
+          <img
+            src="/images/light.svg"
+            alt=""
+            class="w-6 hidden dark:block"
+            srcset=""
+          />
         </button>
-    </div>
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center px-10 py-2 gap-3 border border-gray-500 rounded-full ml-4 font-ovo dark:white/50"
+          >Contact
+          <img
+            src="/images/north_east_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            aria-colspan=""
+            alt=""
+            srcset=""
+            class="w-4 dark:hidden"
+          />
+          <img
+            src="/images/north_east_24dp_FFFFFF.svg"
+            class="w-4 hidden dark:block"
+            alt=""
+          />
+        </a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img
+            src="/images/menu_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            class="w-8 dark:hidden"
+            srcset=""
+          />
+          <img
+            src="/images/menu_fffffff_4 copy.svg"
+            alt=""
+            class="w-8 hidden dark:block"
+          />
+        </button>
+      </div>
 
-
-     <!-- mobile menu -->
-    <ul id="sideMenu" class="flex flex-col md:hidden py-20 px-10 fixed -right-64 gap-4 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-ovo dark:bg-[#2a004a] dark:text-white ">
-        <div class="right-6 absolute top-6 " onclick="closeMenu()">
-        <img src="/images/close_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-8 cursor-pointer dark:hidden">
-        <img src="/images//close-white.svg" alt="" class="w-8 cursor-pointer hidden dark:block">
+      <!-- mobile menu -->
+      <ul
+        id="sideMenu"
+        class="flex flex-col md:hidden py-20 px-10 fixed -right-64 gap-4 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-ovo dark:bg-[#2a004a] dark:text-white"
+      >
+        <div class="right-6 absolute top-6" onclick="closeMenu()">
+          <img
+            src="/images/close_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            class="w-8 cursor-pointer dark:hidden"
+          />
+          <img
+            src="/images//close-white.svg"
+            alt=""
+            class="w-8 cursor-pointer hidden dark:block"
+          />
         </div>
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#skill">My Skills</a></li>
         <li><a href="#work">My Work</a></li>
         <li><a href="#contact">Contact me</a></li>
-    </ul>
+      </ul>
     </nav>
 
-<!-- header -->
-        <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex  flex-col items-center justify-center gap-4 ">
-            <img src="/images/photo.jpeg" class="rounded-full w-32 h-32 object-cover" alt="">
-            <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo">Hi! I'm Balaji <span class="">👋</span></h3>
-            <h1 class="text-3xl sm:text-6xl  lg:text-[66px] font-ovo">Full Stack Web Developer</h1>
-            <p class="max-w-2xl mx-auto font-ovo">I am a full stack web  developer from India,Turning Ideas into Reality with Code & Design.,Creating Innovative Web Applications with Passion </p>
+    <!-- header -->
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img
+        src="/images/photo.jpeg"
+        class="rounded-full w-32 h-32 object-cover"
+        alt=""
+      />
+      <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo">
+        Hi! I'm Balaji <span class="">👋</span>
+      </h3>
+      <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-ovo">
+        Full Stack Web Developer
+      </h1>
+      <p class="max-w-2xl mx-auto font-ovo">
+        I am a full stack web developer from India,Turning Ideas into Reality
+        with Code & Design.,Creating Innovative Web Applications with Passion
+      </p>
 
-            <div class="flex  flex-col sm:flex-row items-center gap-4 mt-4">
-                <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]  flex items-center gap-2 text-white dark:border-transparent">Contact me <img src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="w-4" alt="" srcset=""></a>
-                <a href="/images/Resume.pdf" download class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">My Resume<span class=""><i class='bx bx-download  ' ></i></span></a>
-            </div>
-        </div>
-
-        <!-- about  -->
-            <div class="w-full px-[12%] py-10 scroll-m-20  " id="about">
-                 <div class="text-center mb-2 text-lg font-ovo">Introduction</div>
-                 <div class="text-center text-5xl font-ovo">About me</div>
-
-                 <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-                    <div class="max-w-max mx-auto relative">
-                        <img src="/images/photo.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none" srcset="">
-                        <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                            <img src="/images/circular-text.png" class="w-full animate-spin_slow" alt="">
-                            <img src="/images/men_emoji.jpg" class="w-1/4 absolute  " alt="">
-                        </div>
-                    </div>
-                
-
-                    <div class="flex-1">
-                        <p class="mb-10 max-w-2xl font-ovo">I am an experienced Full stack web  Developer with a strong background in crafting engaging and dynamic web applications. I have collaborated with prestigious organizations, contributing to their success and growth through innovative and user-centric solutions.</p>
-                            <ul class="grid grid-cols-1 sm:grid-cols-3 max-w-2xl gap-6 ">
-                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
-                                    <img src="/images/code.svg" alt="" class="w-7 mt-3 dark:hidden">
-                                    <img src="/images/code-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
-                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-                                    <p class="text-gray-600 text-sm dark:text-white/80 ">HTML, CSS, JavaScript React Js, Next Js</p>  
-                                </li>
-                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
-                                    <img src="/images/school.svg" alt="" class="w-7 mt-3 dark:hidden">
-                                    <img src="/images/school-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
-                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-                                    <p class="text-gray-600 text-sm dark:text-white/80">B.E in Computer Science</p>  
-                                </li>
-                                <li class=" border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-                                    <img src="/images/work.svg" alt="" class="w-7 mt-3 dark:hidden">
-                                    <img src="/images/work-white.svg" alt="" class="w-7 mt-3 hidden dark:block">
-                                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-                                    <p class="text-gray-600 text-sm dark:text-white/80">Built more than 10 projects</p>  
-                                </li>
-                            </ul>
-                                <h4 class="my-6 text-gray-700 dark:text-white">Tool i use</h4>
-
-                                <ul class="flex gap-3 items-center sm:gap-5">
-                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/vscode.png" alt="" class="w-5 sm:w-7"></li>
-                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/firebase.png" alt="" class="w-5 sm:w-7"></li>
-                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/mongodb.png" alt="" class="w-5 sm:w-7"></li>
-                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/figma.png" alt="" class="w-5 sm:w-7"></li>
-                                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300 "><img src="/images/git.png" alt="" class="w-5 sm:w-7"></li>
-                                </ul>
-                    </div>
-                 </div>
-            </div>
-
-            <!-- skills -->
-            <div class=" text-gray-800 mt-10 scroll-m-20" id="skill">
-                <div class="container mx-auto px-4 py-8">
-                    <h2 class="text-3xl font-bold mb-6 text-center font-ovo dark:text-white">My Skills</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-html5 text-4xl text-orange-600 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">HTML</h3>
-                        </div>
-                        <p class="font-ovo">Proficient in creating semantic, accessible, and SEO-friendly markup.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-css3-alt text-4xl text-blue-600 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">CSS</h3>
-                        </div>
-                        <p class="font-ovo">Experienced in designing responsive layouts using CSS and pre-processors like SASS.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-js-square text-4xl text-yellow-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">JavaScript</h3>
-                        </div>
-                        <p class="font-ovo">Skilled in vanilla JavaScript and frameworks like React for building interactive web applications.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fas fa-code text-4xl text-teal-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">Tailwind CSS</h3>
-                        </div>
-                        <p class="font-ovo">Proficient in using Tailwind CSS for rapid UI development with utility-first classes.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-react text-4xl text-blue-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">React</h3>
-                        </div>
-                        <p class="font-ovo">Experienced in building dynamic single-page applications with React and state management libraries.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-git-alt text-4xl text-red-600 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">Git</h3>
-                        </div>
-                        <p class="font-ovo">Proficient in version control using Git and collaborating on projects using GitHub.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-node-js text-4xl text-green-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">Node.js</h3>
-                        </div>
-                        <p class="font-ovo">Experienced in building scalable server-side applications using Node.js and Express.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fas fa-database text-4xl text-indigo-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">MongoDB</h3>
-                        </div>
-                        <p class="font-ovo">Proficient in designing and managing NoSQL databases using MongoDB.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-js text-4xl text-blue-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">TypeScript</h3>
-                        </div>
-                        <p class="font-ovo">Skilled in leveraging TypeScript for type-safe, scalable applications.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fas fa-cloud text-4xl text-yellow-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">Firebase</h3>
-                        </div>
-                        <p class="font-ovo">Experienced in building real-time web applications using Firebase and Firestore.</p>
-                      </div>
-                      
-                      <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow dark:hover:shadow-emerald-500/50">
-                        <div class="flex items-center mb-4">
-                          <i class="fab fa-figma text-4xl text-purple-500 mr-4"></i>
-                          <h3 class="text-xl font-semibold font-ovo">Figma</h3>
-                        </div>
-                        <p class="font-ovo">Proficient in designing wireframes and prototypes with Figma for UI/UX design.</p>
-                      </div>
-                      
-                    
-                    </div>
-                  </div>
-            </div>
-
-            <!-- projects -->
-            <div class="container mx-auto px-4 py-8 scroll-m-20" id="work">
-              <h2 class="text-3xl font-bold mb-6 text-center font-ovo">My Projects</h2>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="projectGrid">
-                
-                <!-- Cryptotracing Project -->
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <img src="/images/crypto.png" alt="Cryptotracing Project" class="w-full h-48 object-cover rounded-lg mb-4">
-                  <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Cryptotracing App</h3>
-                  <p class="mb-4 font-ovo text-gray-600">A crypto tracking app built using React and APIs for real-time data.</p>
-                  <div class="flex space-x-4">
-                    <a href="https://github.com/balajikarthik2004"  target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                    <a href="https://kb-cryptopulse.netlify.app/" t
-arget="_blank" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Live</a>
-                  </div>
-                </div>
-              
-                <!-- Flashcard Project -->
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <img src="/images/flashcard.png" alt="Flashcard Project" class="w-full h-48 object-cover rounded-lg mb-4">
-                  <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Flashcard Website</h3>
-                  <p class="mb-4 font-ovo text-gray-600">A flashcard study tool developed using React and Node.js.</p>
-                  <div class="flex space-x-4">
-                    <a href="https://github.com/StudybuddiesMentor/Studybuddies_Infosys_Internship_Oct2024" target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                    <a href="https://flashcard-study.netlify.app/" target="_blank" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Live</a>
-                  </div>
-                </div>
-              
-                <!-- E-commerce Project -->
-                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <img src="/images/shopping.png" alt="E-commerce Project" class="w-full h-48 object-cover rounded-lg mb-4">
-                  <h3 class="text-xl font-semibold mb-2 font-ovo text-black">E-commerce Store</h3>
-                  <p class="mb-4 font-ovo text-gray-600">A fully responsive e-commerce platform built with React and Tailwind CSS.</p>
-                  <div class="flex space-x-4">
-                    <a href="https://github.com/balajikarthik2004/shopping" target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                    <a href="https://kb-shopping.netlify.app/" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors" target="_blank">Live</a>
-                  </div>
-                </div>
-              
-                  <!-- React-Tailwind Project -->
-                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <img src="/images/project1.jpeg" alt="React-Tailwind Project" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">React-Tailwind Project</h3>
-                    <p class="mb-4 font-ovo text-gray-600">A React application styled with Tailwind CSS for modern UI design.</p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/balajikarthik2004/FoodRestaurant-website" target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                      <a href="https://kbrestaurant-website.netlify.app/" target="_blank" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Live</a>
-                    </div>
-                  </div>
-              
-                  <!-- Netflix Clone -->
-                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <img src="/images/project3.jfif" alt="Netflix Clone" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Netflix Clone</h3>
-                    <p class="mb-4 font-ovo text-gray-600">A Netflix-inspired streaming platform clone using HTML, CSS, and JavaScript.</p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/balajikarthik2004/Website-netflix-clone" target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                      <a href="https://balajikarthik2004.github.io/Website-netflix-clone/#" target="_blank" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Live</a>
-                    </div>
-                  </div>
-              
-                  <!-- Client Portfolio Project -->
-                  <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <img src="/images/client-project.png" alt="Client Portfolio Project" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2 font-ovo text-black">Client Portfolio</h3>
-                    <p class="mb-4 font-ovo text-gray-600">A custom portfolio website for a client showcasing their projects and skills.</p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/balajikarthik2004/" target="_blank" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Source</a>
-                      <a href="https://kb-vijay-portfolio.vercel.app/" target="_blank" class="py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Live</a>
-                    </div>
-                    </div>
-                  
-              
-                </div>
-              
-              </div>
-              <div class="flex items-center justify-center mt-8">
-                <button  onclick="window.open('https://github.com/balajikarthik2004', '_blank');" class="py-3 px-6 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors shadow-md">
-                  Show More
-                </button>
-              </div>
-            </div>
-            
-            <!-- reviews -->
-
-
-            <div class="container mx-auto px-4 py-16" id="reviews">
-              <h2 class="text-3xl font-bold mb-8 text-center font-ovo">Client Reviews</h2>
-              
-              <!-- Review Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-                <!-- Review 1 -->
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <div class="flex justify-center mb-4">
-                    <img src="/images/dhana.png" alt="Client 1" class="w-20 h-20 rounded-full border-4 border-gray-300 dark:border-gray-700">
-                  </div>
-                  <p class="text-lg font-semibold text-black dark:text-white mb-2 font-ovo">Dhana</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 font-ovo">"Balaji was excellent to work with. He delivered my project on time and exceeded my expectations. Highly recommend!"</p>
-                  <div class="flex justify-center">
-                    <!-- Star Rating -->
-                    <div class="flex text-yellow-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- Review 2 -->
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <div class="flex justify-center mb-4">
-                    <img src="/images/prasnath1.png" alt="Client 2" class="w-20 h-20 rounded-full border-4 border-gray-300 dark:border-gray-700">
-                  </div>
-                  <p class="text-lg font-semibold text-black dark:text-white mb-2 font-ovo">Prasanth</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 font-ovo">"Amazing work! The website is exactly what I envisioned. Balaji's attention to detail and communication were superb."</p>
-                  <div class="flex justify-center">
-                    <!-- Star Rating -->
-                    <div class="flex text-yellow-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- Review 3 -->
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                  <div class="flex justify-center mb-4">
-                    <img src="/images/vijay.png" alt="Client 3" class="w-20 h-20 rounded-full border-4 border-gray-300 dark:border-gray-700">
-                  </div>
-                  <p class="text-lg font-semibold text-black dark:text-white mb-2 font-ovo">Vijay</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 font-ovo">"Professional and timely. Balaji's development skills are top-notch, and he helped me achieve exactly what I needed."</p>
-                  <div class="flex justify-center">
-                    <!-- Star Rating -->
-                    <div class="flex text-yellow-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                    </div>
-                  </div>
-                </div>
-            
-              </div>
-            </div>
-            
-            
-      <!-- connect  -->
-
-      <div class="w-full px-[12%] py-10 scroll-m-20 bg-[url('./images/footer.png
-      ')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none " id="contact">
-        <h4 class="text-center mb-2 text-lg font-ovo">Connect with me</h4>
-        <h2 class="text-center text-5xl font-ovo"> Get in touch</h2>
-        <p class="text-center max-w-2xl mx-auto mb-12 mt-5 font-ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
-              
-        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-          <input type="hidden" name="access_key" value="fcd5e40f-c506-4733-8280-3b83c2e363f2">
-          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
-            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white  dark:bg-darkHover/30 dark:border-white/90 "  name="name" required>
-
-            <input type="text" placeholder="Email" name="email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required>
-          </div>
-            <textarea  rows="6" placeholder="Enter your message" class="w-full border-[0.5px] border-gray-400 rounded-md bg-white p-4 mb-6  dark:bg-darkHover/30 dark:border-white/90" id="" required name="message"></textarea>
-
-            <button class="bg-black/80 text-white py-3 px-8 flex justify-between mx-auto items-center gap-3 rounded-full hover:bg-black duration-500 w-max font-ovo dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover ">submit now
-              <img src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="w-4">
-            </button>
-
-        </form>
-      
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a
+          href="#contact"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center gap-2 text-white dark:border-transparent"
+          >Contact me
+          <img
+            src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            class="w-4"
+            alt=""
+            srcset=""
+        /></a>
+        <a
+          href="/images/Resume.pdf"
+          download
+          class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black"
+          >My Resume<span class=""><i class="bx bx-download"></i></span
+        ></a>
       </div>
-              
-      <!-- footer  -->
+    </div>
 
-      <div class="mt-20 ">
-        <div class="text-center mt-6 ">
-          <h1 class="mx-auto mb-4 w-26 font-bold text-3xl ">Mr KB</h1>
-          <div class="w-max flex items-center justify-center gap-2 mx-auto  ">
-            <img src="/images/mail.svg" alt="" class="w-6 dark:hidden">
-            <img src="/images/mail-white.svg" alt="" class="w-6  hidden dark:block ">
-            Kbalajikbalaji879@gmail.com
+    <!-- about  -->
+    <div class="w-full px-[12%] py-10 scroll-m-20" id="about">
+      <div class="text-center mb-2 text-lg font-ovo">Introduction</div>
+      <div class="text-center text-5xl font-ovo">About me</div>
+
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="/images/photo.jpeg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
+            srcset=""
+          />
+          <div
+            class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center"
+          >
+            <img
+              src="/images/circular-text.png"
+              class="w-full animate-spin_slow"
+              alt=""
+            />
+            <img src="/images/men_emoji.jpg" class="w-1/4 absolute" alt="" />
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <p class="mb-10 max-w-2xl font-ovo">
+            I am an experienced Full stack web Developer with a strong
+            background in crafting engaging and dynamic web applications. I have
+            collaborated with prestigious organizations, contributing to their
+            success and growth through innovative and user-centric solutions.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 max-w-2xl gap-6">
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+            >
+              <img src="/images/code.svg" alt="" class="w-7 mt-3 dark:hidden" />
+              <img
+                src="/images/code-white.svg"
+                alt=""
+                class="w-7 mt-3 hidden dark:block"
+              />
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Languages
+              </h3>
+              <p class="text-gray-600 text-sm dark:text-white/80">
+                HTML, CSS, JavaScript React Js, Next Js
+              </p>
+            </li>
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+            >
+              <img
+                src="/images/school.svg"
+                alt=""
+                class="w-7 mt-3 dark:hidden"
+              />
+              <img
+                src="/images/school-white.svg"
+                alt=""
+                class="w-7 mt-3 hidden dark:block"
+              />
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Education
+              </h3>
+              <p class="text-gray-600 text-sm dark:text-white/80">
+                B.E in Computer Science
+              </p>
+            </li>
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-300 hover:shadow-black darK:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+            >
+              <img src="/images/work.svg" alt="" class="w-7 mt-3 dark:hidden" />
+              <img
+                src="/images/work-white.svg"
+                alt=""
+                class="w-7 mt-3 hidden dark:block"
+              />
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Projects
+              </h3>
+              <p class="text-gray-600 text-sm dark:text-white/80">
+                Built more than 10 projects
+              </p>
+            </li>
+          </ul>
+          <h4 class="my-6 text-gray-700 dark:text-white">Tool i use</h4>
+
+          <ul class="flex gap-3 items-center sm:gap-5">
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300"
+            >
+              <img src="/images/vscode.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300"
+            >
+              <img src="/images/firebase.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300"
+            >
+              <img src="/images/mongodb.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300"
+            >
+              <img src="/images/figma.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-300"
+            >
+              <img src="/images/git.png" alt="" class="w-5 sm:w-7" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div
+      class="relative py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
+      id="skills"
+    >
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span
+            class="inline-block px-3 py-1 text-sm font-ovo rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 mb-4"
+            >TECHNICAL MASTERY</span
+          >
+          <h2
+            class="text-4xl font-bold text-gray-900 dark:text-white font-ovo mb-4"
+          >
+            My Development Arsenal
+          </h2>
+          <p
+            class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300 font-ovo"
+          >
+            Tools and technologies I wield to build exceptional digital
+            experiences
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- HTML5 -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-orange-500/30 dark:hover:border-orange-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent dark:from-orange-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-orange-500/10 dark:bg-orange-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-html5 text-3xl text-orange-600 dark:text-orange-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                HTML5
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Semantic markup, accessibility compliance, and SEO optimization
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-orange-600 dark:text-orange-400"
+                  >EXPERT</span
+                >
+              </div>
+            </div>
           </div>
 
+          <!-- CSS3 -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-blue-500/30 dark:hover:border-blue-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent dark:from-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-blue-500/10 dark:bg-blue-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-css3-alt text-3xl text-blue-600 dark:text-blue-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                CSS3
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Responsive design, animations, and modern layout techniques
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-blue-600 dark:text-blue-400"
+                  >EXPERT</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-yellow-500/30 dark:hover:border-yellow-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-transparent dark:from-yellow-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-yellow-500/10 dark:bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-js-square text-3xl text-yellow-500 dark:text-yellow-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                JavaScript
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                ES6+, DOM manipulation, async programming, and design patterns
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-yellow-600 dark:text-yellow-400"
+                  >ADVANCED</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-cyan-500/30 dark:hover:border-cyan-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent dark:from-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-react text-3xl text-cyan-500 dark:text-cyan-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                React
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Hooks, Context API, Redux, and performance optimization
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-cyan-600 dark:text-cyan-400"
+                  >ADVANCED</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-teal-500/30 dark:hover:border-teal-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent dark:from-teal-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-teal-500/10 dark:bg-teal-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-teal-500 dark:text-teal-400"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Tailwind CSS
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Utility-first CSS, component abstraction, and theming
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-teal-600 dark:text-teal-400"
+                  >EXPERT</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Node.js -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-green-500/30 dark:hover:border-green-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent dark:from-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-green-500/10 dark:bg-green-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-node-js text-3xl text-green-600 dark:text-green-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Node.js
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                REST APIs, authentication, middleware, and server optimization
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400"
+                  >ADVANCED</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Express.js -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-gray-500/30 dark:hover:border-gray-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-gray-500/5 to-transparent dark:from-gray-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-gray-500/10 dark:bg-gray-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-gray-600 dark:text-gray-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Express.js
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                RESTful API design, middleware architecture, and routing
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-gray-600 dark:text-gray-400"
+                  >ADVANCED</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-emerald-500/30 dark:hover:border-emerald-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent dark:from-emerald-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-emerald-500/10 dark:bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fas fa-database text-3xl text-emerald-600 dark:text-emerald-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                MongoDB
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Schema design, aggregation, indexing, and performance tuning
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-emerald-600 dark:text-emerald-400"
+                  >INTERMEDIATE</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Firebase -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-amber-500/30 dark:hover:border-amber-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent dark:from-amber-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-amber-500/10 dark:bg-amber-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fas fa-fire text-3xl text-amber-500 dark:text-amber-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Firebase
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Authentication, Firestore, Cloud Functions, and real-time
+                updates
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                  >INTERMEDIATE</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Git/GitHub -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-red-500/30 dark:hover:border-red-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent dark:from-red-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-red-500/10 dark:bg-red-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-git-alt text-3xl text-red-600 dark:text-red-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Git & GitHub
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Version control, CI/CD workflows, and collaborative development
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span class="text-xs font-medium text-red-600 dark:text-red-400"
+                  >ADVANCED</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma -->
+          <div
+            class="group relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-purple-500/30 dark:hover:border-purple-500/50"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent dark:from-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div class="relative z-10">
+              <div
+                class="w-14 h-14 bg-purple-500/10 dark:bg-purple-500/20 rounded-lg flex items-center justify-center mb-4"
+              >
+                <i
+                  class="fab fa-figma text-3xl text-purple-600 dark:text-purple-400"
+                ></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Figma
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm font-ovo leading-relaxed"
+              >
+                Wireframing, prototyping, design systems, and developer handoff
+              </p>
+              <div
+                class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700"
+              >
+                <span
+                  class="text-xs font-medium text-purple-600 dark:text-purple-400"
+                  >INTERMEDIATE</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class=" flex items-center justify-around sm:flex border-t  border-gray-400 mx-[10%]  mt-12 py-6  ">
-          <p class="mr-4">&copy; 2024 Balaji Developer. all rights reserved.</p>
-          <ul class="flex items-center justify-center gap-5 sm:mt-0 mt-4 "> 
-            <li class="">
-                <a href="https://github.com/balajikarthik2004"><i class='bx bxl-github bx-sm'></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/balaji-k-894031258/"><i class='bx bxl-linkedin-square bx-sm'></i></a>
-            </li>
-            <li>              
-              <a href=""><i class='bx bxl-facebook-square bx-sm'></i></a>
-            </li>
-            <li>
-              <a href=""><i class='bx bxl-twitter bx-sm'></i></a>
-            </li>
-        
+      </div>
+    </div>
+    <!-- Projects Section -->
+    <div class="bg-gray-50 dark:bg-gray-900 py-20 scroll-m-20" id="work">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span
+            class="inline-block px-4 py-1 text-sm font-ovo rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 mb-4"
+          >
+            PORTFOLIO SHOWCASE
+          </span>
+          <h2
+            class="text-4xl font-bold text-gray-900 dark:text-white font-ovo mb-4"
+          >
+            My Featured Work
+          </h2>
+          <p
+            class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300 font-ovo"
+          >
+            Selected projects demonstrating my full-stack capabilities and
+            design thinking
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Cryptotracing App -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/crypto.png"
+                alt="Cryptotracing App"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full"
+                  >React</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-purple-500 text-white rounded-full ml-2"
+                  >API Integration</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Cryptotracing App
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Real-time cryptocurrency tracking platform with interactive
+                charts and portfolio management
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/balajikarthik2004"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://kb-cryptopulse.netlify.app/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flashcard Website -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/flashcard.png"
+                alt="Flashcard App"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full"
+                  >React</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-green-500 text-white rounded-full ml-2"
+                  >Node.js</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Flashcard Learning System
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Interactive study tool with spaced repetition algorithm and
+                progress tracking
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/StudybuddiesMentor/Studybuddies_Infosys_Internship_Oct2024"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://flashcard-study.netlify.app/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-commerce Store -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/shopping.png"
+                alt="E-commerce Store"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full"
+                  >React</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-orange-500 text-white rounded-full ml-2"
+                  >Tailwind CSS</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                E-commerce Platform
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Full-featured online store with product catalog, cart system,
+                and checkout flow
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/balajikarthik2004/shopping"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://kb-shopping.netlify.app/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Website -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/project1.jpeg"
+                alt="Restaurant Website"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full"
+                  >React</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-teal-500 text-white rounded-full ml-2"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Restaurant Website
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Modern restaurant website with menu display, reservation system,
+                and gallery
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/balajikarthik2004/FoodRestaurant-website"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://kbrestaurant-website.netlify.app/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Netflix Clone -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/project3.jfif"
+                alt="Netflix Clone"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-red-500 text-white rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-gray-500 text-white rounded-full ml-2"
+                  >HTML/CSS</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Netflix UI Clone
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Responsive streaming platform clone with movie browsing and
+                trailer playback
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/balajikarthik2004/Website-netflix-clone"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://balajikarthik2004.github.io/Website-netflix-clone/#"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client Portfolio -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="relative h-60 overflow-hidden">
+              <img
+                src="/images/client-project.png"
+                alt="Client Portfolio"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full"
+                  >React</span
+                >
+                <span
+                  class="inline-block px-3 py-1 text-xs font-semibold bg-indigo-500 text-white rounded-full ml-2"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-gray-900 dark:text-white font-ovo mb-2"
+              >
+                Client Portfolio
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-5 font-ovo">
+                Custom professional portfolio with project showcase and contact
+                form
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/balajikarthik2004/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fab fa-github mr-2"></i> Code
+                </a>
+                <a
+                  href="https://kb-vijay-portfolio.vercel.app/"
+                  target="_blank"
+                  class="flex-1 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-center font-medium transition-colors"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+          <a
+            href="https://github.com/balajikarthik2004"
+            target="_blank"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors dark:bg-gray-700 dark:hover:bg-gray-600"
+          >
+            <i class="fab fa-github mr-2"></i> View All Projects
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- reviews -->
+
+    <div class="container mx-auto px-4 py-16" id="reviews">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2
+          class="text-4xl font-bold mb-4 text-gray-900 dark:text-white font-ovo"
+        >
+          Trusted by Innovators
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 font-ovo">
+          From portfolios to AI solutions—clients love working with me
+        </p>
+      </div>
+
+      <!-- Review Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Review 1 - Personal Portfolio -->
+        <div
+          class="relative p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-purple-100 dark:border-purple-900"
+        >
+          <div class="flex items-center mb-6">
+            <img
+              src="/images/dhana.png"
+              alt="Dhana"
+              class="w-14 h-14 rounded-full border-2 border-purple-200 dark:border-purple-800 object-cover"
+            />
+            <div class="ml-4">
+              <p
+                class="text-lg font-bold text-gray-900 dark:text-white font-ovo"
+              >
+                Dhana
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 font-ovo">
+                Creative Director
+              </p>
+            </div>
+          </div>
+          <p
+            class="text-gray-700 dark:text-gray-300 italic mb-6 relative pl-6 before:content-['“'] before:absolute before:left-0 before:text-4xl before:text-purple-400 before:opacity-30 before:top-0"
+          >
+            Balaji transformed my vision into a stunning portfolio that landed
+            me 3 job offers in a month! His design intuition is unmatched.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-1">
+              <!-- 5/5 Stars -->
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <span class="text-xs text-gray-500 dark:text-gray-400"
+              >Portfolio Design</span
+            >
+          </div>
+        </div>
+
+        <!-- Review 2 - Personal Portfolio -->
+        <div
+          class="relative p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-blue-100 dark:border-blue-900"
+        >
+          <div class="flex items-center mb-6">
+            <img
+              src="/images/prasnath1.png"
+              alt="Prasanth"
+              class="w-14 h-14 rounded-full border-2 border-blue-200 dark:border-blue-800 object-cover"
+            />
+            <div class="ml-4">
+              <p
+                class="text-lg font-bold text-gray-900 dark:text-white font-ovo"
+              >
+                Prasanth
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 font-ovo">
+                Photographer
+              </p>
+            </div>
+          </div>
+          <p
+            class="text-gray-700 dark:text-gray-300 italic mb-6 relative pl-6 before:content-['“'] before:absolute before:left-0 before:text-4xl before:text-blue-400 before:opacity-30 before:top-0"
+          >
+            My photography portfolio by Balaji loads 3x faster than competitors'
+            sites. He perfectly balanced aesthetics and performance!
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-1">
+              <!-- 4.5/5 Stars -->
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                />
+              </svg>
+            </div>
+            <span class="text-xs text-gray-500 dark:text-gray-400"
+              >Portfolio + CMS</span
+            >
+          </div>
+        </div>
+
+        <!-- Review 3 - Full-Stack Projects -->
+        <div
+          class="relative p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-green-100 dark:border-green-900"
+        >
+          <div class="flex items-center mb-6">
+            <img
+              src="/images/vijay.png"
+              alt="Vijay"
+              class="w-14 h-14 rounded-full border-2 border-green-200 dark:border-green-800 object-cover"
+            />
+            <div class="ml-4">
+              <p
+                class="text-lg font-bold text-gray-900 dark:text-white font-ovo"
+              >
+                Vijay
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 font-ovo">
+                Tech Lead, AI Startup
+              </p>
+            </div>
+          </div>
+          <p
+            class="text-gray-700 dark:text-gray-300 italic mb-6 relative pl-6 before:content-['“'] before:absolute before:left-0 before:text-4xl before:text-green-400 before:opacity-30 before:top-0"
+          >
+            Balaji built our NLP chatbot that handles 10K+ queries daily. His AI
+            agent reduced our support tickets by 70%—absolutely brilliant!
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-1">
+              <!-- 5/5 Stars -->
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <span class="text-xs text-gray-500 dark:text-gray-400"
+              >AI Chatbot + Agent</span
+            >
+          </div>
+        </div>
+
+        <!-- Review 4 - New Client (Prem) -->
+        <div
+          class="relative p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-orange-100 dark:border-orange-900"
+        >
+          <div class="flex items-center mb-6">
+            <img
+              src="/images/prem.jpg"
+              alt="Prem"
+              class="w-14 h-14 rounded-full border-2 border-orange-200 dark:border-orange-800 object-cover"
+            />
+            <div class="ml-4">
+              <p
+                class="text-lg font-bold text-gray-900 dark:text-white font-ovo"
+              >
+                Prem
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 font-ovo">
+                Entrepreneur
+              </p>
+            </div>
+          </div>
+          <p
+            class="text-gray-700 dark:text-gray-300 italic mb-6 relative pl-6 before:content-['“'] before:absolute before:left-0 before:text-4xl before:text-orange-400 before:opacity-30 before:top-0"
+          >
+            My portfolio by Balaji became my business card—it's so impressive
+            that clients ask who designed it before discussing projects!
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-1">
+              <!-- 5/5 Stars -->
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <span class="text-xs text-gray-500 dark:text-gray-400"
+              >Portfolio + Branding</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Indicators (Bottom) -->
+      <div
+        class="mt-16 flex flex-wrap justify-center gap-8 items-center text-gray-500 dark:text-gray-400 text-sm"
+      >
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 mr-2 text-purple-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            />
+          </svg>
+          10+ Projects Delivered
+        </div>
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 mr-2 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          98% On-Time Rate
+        </div>
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 mr-2 text-green-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          100% Client Satisfaction
+        </div>
+      </div>
+    </div>
+
+    <!-- connect  -->
+
+    <div
+      class="w-full px-[12%] py-10 scroll-m-20 bg-[url('./images/footer.png ')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
+      id="contact"
+    >
+      <h4 class="text-center mb-2 text-lg font-ovo">Connect with me</h4>
+      <h2 class="text-center text-5xl font-ovo">Get in touch</h2>
+      <p class="text-center max-w-2xl mx-auto mb-12 mt-5 font-ovo">
+        I'd love to hear from you! If you have any questions, comments or
+        feedback, please use the form below.
+      </p>
+
+      <form
+        method="post"
+        action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="fcd5e40f-c506-4733-8280-3b83c2e363f2"
+        />
+        <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            name="name"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Email"
+            name="email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required
+          />
+        </div>
+        <textarea
+          rows="6"
+          placeholder="Enter your message"
+          class="w-full border-[0.5px] border-gray-400 rounded-md bg-white p-4 mb-6 dark:bg-darkHover/30 dark:border-white/90"
+          id=""
+          required
+          name="message"
+        ></textarea>
+
+        <button
+          class="bg-black/80 text-white py-3 px-8 flex justify-between mx-auto items-center gap-3 rounded-full hover:bg-black duration-500 w-max font-ovo dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
+        >
+          submit now
+          <img
+            src="/images/arrow_forward_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            class="w-4"
+          />
+        </button>
+      </form>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="mt-20">
+      <div class="text-center mt-6">
+        <h1 class="mx-auto mb-4 w-26 font-bold text-3xl">Mr KB</h1>
+        <div class="w-max flex items-center justify-center gap-2 mx-auto">
+          <img src="/images/mail.svg" alt="" class="w-6 dark:hidden" />
+          <img
+            src="/images/mail-white.svg"
+            alt=""
+            class="w-6 hidden dark:block"
+          />
+          Kbalajikbalaji879@gmail.com
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-around sm:flex border-t border-gray-400 mx-[10%] mt-12 py-6"
+      >
+        <p class="mr-4">&copy; 2024 Balaji Developer. all rights reserved.</p>
+        <ul class="flex items-center justify-center gap-5 sm:mt-0 mt-4">
+          <li class="">
+            <a href="https://github.com/balajikarthik2004"
+              ><i class="bx bxl-github bx-sm"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/balaji-k-894031258/"
+              ><i class="bx bxl-linkedin-square bx-sm"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""><i class="bx bxl-facebook-square bx-sm"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bx bxl-twitter bx-sm"></i></a>
+          </li>
         </ul>
-        </div> 
       </div>
-
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
